@@ -20,7 +20,7 @@ from backend.services.rag_service import rag_service
 logger = logging.getLogger(__name__)
 router = APIRouter()
 
-ALLOWED_EXTENSIONS = {".txt", ".pdf", ".docx", ".md", ".csv", ".py", ".js", ".json"}
+ALLOWED_EXTENSIONS = {".rtf", ".txt", ".pdf", ".docx", ".md", ".csv", ".py", ".js", ".json"}
 
 
 @router.post("/upload", response_model=DocumentResponse, status_code=status.HTTP_201_CREATED)
